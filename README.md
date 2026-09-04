@@ -1,11 +1,11 @@
 <div align="right">
 
 [1]: https://github.com/AadityaChaudhary-git
-[2]: https://www.linkedin.com/in/aaditya-chaudhary-3a322b329/
+[2]: https://www.linkedin.com/in/aditya-chaudhary-3a322b329/
 
 
-[![github](icons/git.svg)][1]
-[![linkedin](icons/iconmonstr-linkedin-5.svg)][2]
+[![github](output/git.svg)][1]
+[![linkedin](output/linkedin.svg)][2]
 
 </div>
 
@@ -13,9 +13,9 @@
 
 ![CyberShield Dashboard](output/image3.png)
 
-CyberShield is an **MCA major group project** designed to analyze network activity and identify potentially suspicious network behavior using Machine Learning.
+CyberShield is a **group project** focused on analyzing network activity and detecting potentially suspicious behavior using Machine Learning.
 
-The project combines **Python, SQL, Machine Learning and Flask** to create a complete network threat detection and security analytics system.
+The project combines **Python, SQL, Machine Learning and Flask** to build a network threat detection and security analytics system.
 
 **Workflow:**  
 Network Logs → Feature Engineering → ML Model → Threat Prediction → Security Alert
