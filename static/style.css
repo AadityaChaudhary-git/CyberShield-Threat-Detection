@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #080d1a;
+    color: #e8edf7;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/* Header */
+header {
+    padding: 24px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #202b43;
+    background: #0c1324;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 5px 0 0;
+    color: #8e9ab4;
+    font-size: 14px;
+}
+
+header span {
+    color: #65d48a;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Main */
+main,
+.cards {
+    max-width: 1200px;
+    margin: auto;
+}
+
+main {
+    padding: 10px 0 40px;
+}
+
+/* Statistics Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 28px 0;
+}
+
+.cards > div {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #121b30, #0f1729);
+    border: 1px solid #263451;
+    border-radius: 16px;
+    padding: 24px;
+    transition: 0.25s ease;
+}
+
+.cards > div:hover {
+    transform: translateY(-4px);
+    border-color: #40557d;
+}
+
+.cards small {
+    display: block;
+    color: #8e9ab4;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+.cards b {
+    display: block;
+    margin-top: 8px;
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+/* Panels */
+.panel {
+    background: #111a2d;
+    border: 1px solid #263451;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+}
+
+.panel h2 {
+    margin: 0 0 20px;
+    font-size: 20px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    color: #9eabc4;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 14px 12px;
+    border-bottom: 1px solid #24304a;
+}
+
+tbody tr,
+tr {
+    transition: background 0.2s ease;
+}
+
+tr:hover {
+    background: #172139;
+}
+
+td {
+    font-size: 14px;
+}
+
+/* Status */
+.Suspicious {
+    color: #ff7188;
+    font-weight: 600;
+}
+
+.Normal {
+    color: #65d48a;
+    font-weight: 600;
+}
+
+/* Prediction Form */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 13px 14px;
+    background: #0a1020;
+    color: #e8edf7;
+    border: 1px solid #33415f;
+    border-radius: 9px;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+input:focus {
+    border-color: #637da8;
+    box-shadow: 0 0 0 3px rgba(99, 125, 168, 0.12);
+}
+
+input::placeholder {
+    color: #697792;
+}
+
+/* Button */
+button {
+    margin-top: 18px;
+    padding: 13px 24px;
+    background: #e8edf7;
+    color: #0b1020;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: #ffffff;
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.12);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Prediction Result */
+#result {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: 9px;
+    background: #0b1222;
+    border: 1px solid #263451;
+    color: #dce5f5;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #080d1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2c3954;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #405170;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    header {
+        display: block;
+        padding: 20px;
+    }
+
+    header span {
+        display: block;
+        margin-top: 12px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    main {
+        padding: 0 18px 30px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .panel {
+        padding: 18px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+}
