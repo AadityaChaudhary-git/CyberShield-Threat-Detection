@@ -11,7 +11,7 @@
 
 # <div align="center">CyberShield Threat Detection</div>
 
-![CyberShield Dashboard](output/image.png)
+![CyberShield Dashboard](output/image3.png)
 
 CyberShield is an **MCA major group project** designed to analyze network activity and identify potentially suspicious network behavior using Machine Learning.
 
